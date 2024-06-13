@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="Javascript/include.js" defer></script>
+    <link rel="stylesheet" href="CSS/weather.css">
+</head>
+<body onload="includeHTML()">
+    <div include-html="header.html"></div>
+    <div class="bg">
+        <div class="container">
+            <h1>Weather App</h1>
+            <div id="location">
+                <label for="location">Enter Location: </label>
+                <input type="text" id="input" required>
+                <button onclick="getWeather()" type="submit">Search</button>
+            </div>
+            <img id="icon" alt="Weather Icon"/>
+            <div id="temp"></div>
+            <div id="weather"></div>
+            <div id="forecast"></div>
+        </div>
+    </div>
+    <div include-html="footer.html"></div>
+    <script src="Javascript/weather.js"></script>
+</body>
+</html>
